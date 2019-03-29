@@ -66,7 +66,7 @@ To use the component put something like this into your template.
 Or something like this:
 ```html
 <WagtailImage
-  @image=wagtailImage
+  @image={{wagtailImage}}
   alt="An old red barn."
   @resizeWidth="400"
   @resizeHeight="300"
