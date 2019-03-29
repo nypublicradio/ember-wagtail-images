@@ -38,7 +38,7 @@ module.exports = function(environment) {
     // ...
     APP: {
       wagtailImages: {
-        imagePath: 'https://my-wagtail-instance.net/images/'
+        imagePath: 'https://my-wagtail-instance.net/images'
       }
     }
     // ...
@@ -75,7 +75,7 @@ Or something like this:
 
 When your page is rendered it will appear like this:
 ```html
-<img src="/32/fill-400x300" alt="An old red barn.">
+<img src="https://my-wagtail-instance.net/images/32/fill-400x300/" alt="An old red barn.">
 ```
 
 There's also a helper if you only want a URL:
