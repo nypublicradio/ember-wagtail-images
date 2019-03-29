@@ -11,7 +11,7 @@ module.exports = function(environment) {
     // ...
     APP: {
       wagtailImages: {
-        imagePath: 'https://my-wagtail-instance.net/images/'
+        imagePath: 'https://my-wagtail-instance.net/images'
       }
     }
     // ...
@@ -61,7 +61,7 @@ Basic usage looks like this:
 ```
 This will render as an `img` tag that looks like this:
 ```html
-<img src="/32/fill-400x300" alt="An old red barn.">
+<img src="https://my-wagtail-instance.net/images/32/fill-400x300/" alt="An old red barn.">
 ```
 
 
@@ -90,7 +90,7 @@ This will render as an `img` tag that looks like this:
 ```
 becomes
 ```html
-<img src="/32/max-400x300|bgcolor-ddd|jpegquality=90" alt="An old red barn.">
+<img src="https://my-wagtail-instance.net/images/32/max-400x300|bgcolor-ddd|jpegquality-90/" alt="An old red barn.">
 ```
 
 
@@ -116,7 +116,7 @@ const wagtailImage2 = {
 ```
 
 ```html
-<img src="/32/fill-400x300" srcset="/32/fill-400x300,/32/fill-600x450 1.5x,/32/fill-800x600 2x" alt="An old red barn.">
+<img src="https://my-wagtail-instance.net/images/32/fill-400x300/" srcset="https://my-wagtail-instance.net/images/32/fill-400x300/,https://my-wagtail-instance.net/images/32/fill-600x450/ 1.5x,https://my-wagtail-instance.net/images/32/fill-800x600/ 2x" alt="An old red barn.">
 ```
 
 
