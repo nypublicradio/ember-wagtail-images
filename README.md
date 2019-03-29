@@ -2,6 +2,7 @@
 
 An addon for using images from the [Wagtail](https://wagtail.io/) CMS with Ember.
 
+
 ## Table of Contents
 
   * [Compatibility](#compatibility)
@@ -9,6 +10,7 @@ An addon for using images from the [Wagtail](https://wagtail.io/) CMS with Ember
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [License](#license)
+
 
 ## Compatibility
 
@@ -23,6 +25,7 @@ ember install ember-wagtail-images
 ```
 
 ⚠️ This addon requires [setting up a custom ServeView for images in Wagtail](./docs/setting-up-a-custom-serveview-in-wagtail.md) that doesn't use a security key.
+
 
 ## Usage
 
@@ -43,7 +46,7 @@ module.exports = function(environment) {
 };
 ```
 
-This addon expects an image object or model that has an `id` key.
+This addon doesn't mange your image model for you. It expects you to provide an image object or model that has an `id` key.
 ```js
 const wagtailImage = {
   "id": 32
@@ -70,7 +73,7 @@ Or something like this:
 />
 ```
 
-When your page is rendered it appear like this:
+When your page is rendered it will appear like this:
 ```html
 <img src="/32/fill-400x300" alt="An old red barn.">
 ```
