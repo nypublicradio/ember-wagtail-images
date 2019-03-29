@@ -53,7 +53,7 @@ Basic usage looks like this:
 
 ```html
 <WagtailImage
-  @image=wagtailImage
+  @image={{wagtailImage}}
   alt="An old red barn."
   @resizeWidth="400"
   @resizeHeight="300"
@@ -79,7 +79,7 @@ This will render as an `img` tag that looks like this:
 
 ```hbs
 <WagtailImage
-  @image=wagtailImage
+  @image={{wagtailImage}}
   alt="An old red barn."
   @resizeWidth="400"
   @resizeHeight="300"
@@ -108,7 +108,7 @@ const wagtailImage2 = {
 
 ```hbs
 <WagtailImage
-  @image=wagtailImage
+  @image={{wagtailImage}}
   alt="An old red barn."
   @resizeWidth="400"
   @resizeHeight="300"
