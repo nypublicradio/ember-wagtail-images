@@ -1,0 +1,1 @@
+export { default } from 'ember-wagtail-images/components/wagtail-image';
