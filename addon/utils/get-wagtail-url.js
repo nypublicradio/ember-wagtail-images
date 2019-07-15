@@ -35,7 +35,7 @@ const getOptionsString = function(options) {
   );
 };
 
-export default function getWagtailUrl(id, resizeOptions, extraOptions) {
+export default function getWagtailUrl(id, resizeOptions = {}, extraOptions = {}) {
   const resizeRule = getResizeRule(resizeOptions.width, resizeOptions.height, resizeOptions.fit);
   const optionString = getOptionsString(extraOptions);
   const path = get(config, 'APP.wagtailImages.imagePath') || ""
