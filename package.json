@@ -1,6 +1,6 @@
 {
   "name": "ember-wagtail-images",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use images from the Wagtail CMS in your Ember app.",
   "keywords": [
     "ember-addon"
